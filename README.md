@@ -1,3 +1,7 @@
+# zxcvbn-min is zxcvbn without wordlists
+
+Beaware that you should always use wordlists with zxcvbn but maybe just not on the front-end :P
+
 ```
 _________________________________________________/\/\___________________
 _/\/\/\/\/\__/\/\__/\/\____/\/\/\/\__/\/\__/\/\__/\/\________/\/\/\/\___
