@@ -1,8 +1,6 @@
 *.js
 !zxcvbn*.js
-!demo/jquery.js
-!demo/require.js
-!demo/mustache.js
+!demo/*
 node_modules
 lib
 *~

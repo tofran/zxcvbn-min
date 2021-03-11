@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>zxcvbn tests</title>
+    <meta charset="UTF-8">
+    <title>zxcvbn-min demo</title>
 
     <script type="text/javascript" src="jquery.js">
     </script>
@@ -33,20 +35,41 @@
       }
 
       #examples-container {
-        margin-top: 200px;
+        margin-top: 100px;
       }
 
-    </style>
-    <h1><a href="http://tech.dropbox.com/?p=165">introduction</a></h1>
-    <h1><a href="https://github.com/lowe/zxcvbn">zxcvbn on github</a></h1>
-    <h1>demo</h1>
+      label {
+        display: block;
+        margin: 1em;
+      }
 
-    <input id="search-bar" type="text" size="50" />
+      textarea {
+        width: 100%;
+        height: 10em;
+      }
+    </style>
+
+    <h1><a href="https://github.com/tofran/zxcvbn-min">zxcvbn-min</a> demo</h1>
+    
+    <strong><a href="https://lowe.github.io/tryzxcvbn/">original demo</a></strong>
+
+    <label>
+      User inputs (newline-separated)
+      <textarea id="user-inputs" type="text"></textarea>
+    </label>
+
+    <h2>manual testing</h2>
+
+    <label>
+      Password
+      <input id="query" type="text" size="50" />
+    </label>
+    
     <div id="search-results">
     </div>
 
     <div id="examples-container">
-    <h1 id="examples">examples</h1>
+    <h2 id="examples">examples</h2>
     <div id="results">
     </div>
 

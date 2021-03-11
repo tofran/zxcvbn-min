@@ -1,6 +1,12 @@
 # zxcvbn-min is zxcvbn without wordlists
 
-Beaware that you should always use wordlists with zxcvbn but maybe just not on the front-end :P
+Removes all dictionaries / freequency lists / wordlists from zxcvbn, making it much smaller: **29 KB** instead of the original **821 KB**.
+
+Beaware that you should always use wordlists with zxcvbn, but maybe just not on the front-end.
+
+Have a look at the [demo for zxcvbn-min](https://tofran.github.io/zxcvbn-min) and compare it with the [original](https://lowe.github.io/tryzxcvbn/).
+
+---
 
 ```
 _________________________________________________/\/\___________________
@@ -10,9 +16,6 @@ ___/\/\________/\/\/\____/\/\__________/\/\/\____/\/\__/\/\__/\/\__/\/\_
 _/\/\/\/\/\__/\/\__/\/\____/\/\/\/\______/\______/\/\/\/\____/\/\__/\/\_
 ________________________________________________________________________
 ```
-
-[![Build Status](https://travis-ci.org/dropbox/zxcvbn.svg?branch=master)](https://travis-ci.org/dropbox/zxcvbn)
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/dropbox-zxcvbn.svg)](https://saucelabs.com/u/dropbox-zxcvbn)
 
 `zxcvbn` is a password strength estimator inspired by password crackers. Through pattern matching and conservative estimation, it recognizes and weighs 30k common passwords, common names and surnames according to US census data, popular English words from Wikipedia and US television and movies, and other common patterns like dates, repeats (`aaa`), sequences (`abcd`), keyboard patterns (`qwertyuiop`), and l33t speak.
 
