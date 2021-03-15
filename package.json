@@ -1,11 +1,11 @@
 {
-  "name": "zxcvbn",
-  "version": "4.4.2",
-  "description": "realistic password strength estimation",
+  "name": "zxcvbn-min",
+  "version": "4.4.3",
+  "description": "zxcvbn-min is zxcvbn without wordlists",
   "author": "Dan Wheeler",
   "license": "MIT",
   "main": "lib/main.js",
-  "repository": "dropbox/zxcvbn",
+  "repository": "tofran/zxcvbn-min",
   "scripts": {
     "test": "coffeetape test/*.coffee | faucet",
     "test-saucelabs": "zuul -- test/*.coffee",
@@ -32,6 +32,7 @@
     "zuul": "^3.4.0"
   },
   "keywords": [
+    "zxcvbn",
     "password",
     "passphrase",
     "security",

@@ -2,9 +2,24 @@
 
 Removes all dictionaries / freequency lists / wordlists from zxcvbn, making it much smaller: **29 KB** instead of the original **821 KB**.
 
-Beaware that you should always use wordlists with zxcvbn, but maybe just not on the front-end.
+:warning: Be aware that you should always use wordlists / user inputs with zxcvbn.
+
+zxcvbn-min can be used with your own custom or localized dictionary.
+
+You can also have a subset of the lists on the frontend, making it much lighter. This has the drawback that in some cases it will only fail on the backend, but you tackle it with good feedback.
 
 Have a look at the [demo for zxcvbn-min](https://tofran.github.io/zxcvbn-min) and compare it with the [original](https://lowe.github.io/tryzxcvbn/).
+
+## Usage
+
+```javascript
+zxcvbn(password, user_inputs=[])  // add your dictionary to the existing user_inputs
+```
+
+## Installation
+
+  - From npm: `npm install zxcvbn-min`;
+  - Manually from js file: download [zxcvbn.js](./dist/zxcvbn.js).
 
 ---
 
